@@ -2,7 +2,7 @@
 
 <p id="description">Simple discord webhook library in python created in a single file. Could probably be made much more efficient but it works. (Code could honestly not be more repetitive, someone please fix it)</p>
 
-<p align="center"><img src="https://img.shields.io/discord/992429435687018588?label=Discord" alt="shields"> <img src="https://img.shields.io/github/license/LightningReflex/DiscoPyHook" alt="shields"></p>
+<img src="https://img.shields.io/github/license/LightningReflex/DiscoPyHook" alt="shields"></p>
 <p>&nbsp;</p>
 
 <h2>📝 Example</h2>
