@@ -10,6 +10,7 @@
 
 ```python
 from DiscoPyHook import DiscoPyHook as DPH
+import time
 
 webhook = DPH("https://discord.com/api/webhooks/1234567890/abcdefghijklmnopqrstuvwxyz1234567890")
 webhook.setContent("Hello world!")
@@ -19,12 +20,14 @@ embed = DPH.Embed()
 embed.setTitle("Real title")
 embed.setDescription("Real description")
 
-embed.setFooter(DPH.Footer().setText("You can even do (look at title)")).setAuthor(DPH.Author().setName("STUFF LIKE THIS"))
+embed.setFooter(DPH.Footer().setText("You can even do (look above title)")).setAuthor(DPH.Author().setName("STUFF LIKE THIS"))
 embed.addField(DPH.Field().setName("Field 1").setValue("Value 1").setInline(True))
 # You could also replace every "set" with "get" like you could do "embed.getTitle()" or "embed.getFields()" (returns a list)
 
 # This also works (they all have the "setRaw(object)" method):
 embed.addField(DPH.Field().setRaw({"name": "Field 2", "value": "Value 2", "inline": True}))
+# timestamps!
+embed.setTimestamp(time.time())
 
 # You can do
 # "embed.setColorHex("00ff00")" or
@@ -36,6 +39,7 @@ webhook.addEmbed(embed)
 
 webhook.send()
 ```
+![Example Image](https://i.imgur.com/QWeh2R2.png)
 <p>&nbsp;</p>
 
 <h2>💖 Support?</h2>
