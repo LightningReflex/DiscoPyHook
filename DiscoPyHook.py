@@ -443,4 +443,3 @@ class DiscoPyHook:
             "json": self.data
         }).start()
         return self
-
