@@ -438,6 +438,9 @@ class DiscoPyHook:
         self.data = data
         return self
 
+    def build(self):
+        return self.data
+
     def send(self):
         threading.Thread(target=requests.post, args=(self.url,), kwargs={
             "json": self.data
